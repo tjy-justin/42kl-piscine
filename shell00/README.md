@@ -1,4 +1,4 @@
-- https://www.youtube.com/playlist?list=PLxeKVrYoZO6B64HVamfG1d8Jb2XIrNuRO
+https://www.youtube.com/playlist?list=PLxeKVrYoZO6B64HVamfG1d8Jb2XIrNuRO
 
 # ex00
 https://www.computernetworkingnotes.com/linux-tutorials/the-output-of-the-ls-l-command-explained.html
