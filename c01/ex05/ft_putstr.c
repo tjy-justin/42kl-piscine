@@ -1,28 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/14 04:09:46 by jin-tan           #+#    #+#             */
-/*   Updated: 2024/03/15 02:35:34 by jin-tan          ###   ########.fr       */
+/*   Created: 2024/03/15 04:02:33 by jin-tan           #+#    #+#             */
+/*   Updated: 2024/03/15 04:02:33 by jin-tan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_is_negative(int n)
+void	ft_putstr(char *str)
 {
-	char	sign;
-
-	if (n < 0)
+	while (*str != '\0') // loop until end of str
 	{
-		sign = 'N';
+		write(1, str, 1);
+		str++;
 	}
-	else if (n >= 0)
-	{
-		sign = 'P';
-	}
-	write(1, &sign, 1);
 }

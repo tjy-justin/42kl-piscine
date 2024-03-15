@@ -1,28 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/14 04:09:46 by jin-tan           #+#    #+#             */
-/*   Updated: 2024/03/15 02:35:34 by jin-tan          ###   ########.fr       */
+/*   Created: 2024/03/15 03:57:45 by jin-tan           #+#    #+#             */
+/*   Updated: 2024/03/15 03:57:45 by jin-tan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_is_negative(int n)
+void	ft_ultimate_div_mod(int *a, int *b)
 {
-	char	sign;
-
-	if (n < 0)
-	{
-		sign = 'N';
-	}
-	else if (n >= 0)
-	{
-		sign = 'P';
-	}
-	write(1, &sign, 1);
+	int i = *a; // declare i as *a will be changed later
+	*a = *a / *b;
+	*b = i % *b;
 }

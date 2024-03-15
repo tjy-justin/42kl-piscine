@@ -1,28 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/14 04:09:46 by jin-tan           #+#    #+#             */
-/*   Updated: 2024/03/15 02:35:34 by jin-tan          ###   ########.fr       */
+/*   Created: 2024/03/15 03:42:23 by jin-tan           #+#    #+#             */
+/*   Updated: 2024/03/15 03:42:23 by jin-tan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_is_negative(int n)
+void	ft_swap(int *a, int *b)
 {
-	char	sign;
+	int	i;
 
-	if (n < 0)
-	{
-		sign = 'N';
-	}
-	else if (n >= 0)
-	{
-		sign = 'P';
-	}
-	write(1, &sign, 1);
+	i = *a;
+	*a = *b;
+	*b = i; // i retains original *a value
 }
