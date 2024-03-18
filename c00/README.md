@@ -1,5 +1,16 @@
 https://www.youtube.com/playlist?list=PLxeKVrYoZO6DNJxUBWIiTO-B6X62SMHVo
 
+# How to Add Header, Check, Compile
+
+```
+Fn+F1
+
+norminette -R CheckForbiddenSourceHeader
+
+cc -Wall -Wextra -Werror hello.c bye.c -o hello
+./hello
+```
+
 # ex00
 
 `write(file descriptor, mem address, byte size);`
