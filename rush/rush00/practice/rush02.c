@@ -9,15 +9,15 @@ void	top_line(int x)
 	k = 0;
 	if (x > 0)
 	{
-		ft_putchar('/');
+		ft_putchar('A');
 		while (k < x - 1)
 		{
-			ft_putchar('*');
+			ft_putchar('B');
 			k++; // inc should be inside while loop
 		}
 		if (x != 1)
 		{
-			ft_putchar('\\');
+			ft_putchar('A');
 		}
 		ft_putchar('\n');
 	}
@@ -30,15 +30,15 @@ void	bottom_line(int x)
 	k = 0;
 	if (x > 0)
 	{
-		ft_putchar('\\');
+		ft_putchar('C');
 		while (k < x - 1)
 		{
-			ft_putchar('*');
+			ft_putchar('B');
 			k++; // inc should be inside while loop
 		}
 		if (x != 1)
 		{
-			ft_putchar('/');
+			ft_putchar('C');
 		}
 		ft_putchar('\n');
 	}
@@ -51,7 +51,7 @@ void	mid_line(int x)
 	j = 0;
 	if (x > 0)
 	{
-		ft_putchar('*');
+		ft_putchar('B');
 		while (j < x - 1)
 		{
 			ft_putchar(' ');
@@ -59,7 +59,7 @@ void	mid_line(int x)
 		}
 		if (x != 1)
 		{
-			ft_putchar('*');
+			ft_putchar('B');
 		}
 		ft_putchar('\n');
 	}
