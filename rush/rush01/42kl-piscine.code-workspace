@@ -1,0 +1,15 @@
+{
+  "folders": [
+	{
+		"path": "../.."
+	},
+	{
+		"path": "../../../../Documents/lsl-skyscraper"
+	}
+],
+  "settings": {
+    "files.associations": {
+      "sstream": "c"
+    }
+  }
+}
