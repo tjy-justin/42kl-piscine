@@ -1,13 +1,18 @@
 #include <stdio.h>
 
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
-	while (src[i] != '\0')
+	while (src[i] != '\0' && i < n)
 	{
 		dest[i] = src[i];
+		i++;
+	}
+	while (i < n)
+	{
+		dest[i] = '\0';
 		i++;
 	}
 	return (dest);
@@ -19,7 +24,7 @@ int	main(int argc, char *argv[])
 	{
 		printf("%s\n", argv[1]);
 		printf("%s\n", argv[2]);
-		ft_strcpy(argv[1], argv[2]);
+		ft_strncpy(argv[1], argv[2], 20);
 		printf("%s\n", argv[1]);
 	}
 	return (0);

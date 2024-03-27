@@ -20,3 +20,12 @@ void	ft_putstr(char *str)
 		str++;
 	}
 }
+
+int main()
+{
+    char *c = "Hello World!\n";
+    
+    ft_putstr(c);
+    
+    return 0;
+}
