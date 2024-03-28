@@ -14,18 +14,19 @@
 
 void	ft_putstr(char *str)
 {
-	while (*str != '\0') // loop until end of str
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0') // loop until end of str
 	{
-		write(1, str, 1);
-		str++;
+		write(1, &str[i], 1);
+		i++;
 	}
 }
 
 int main()
 {
-    char *c = "Hello World!\n";
-    
-    ft_putstr(c);
-    
-    return 0;
+	char *c = "Hello World!!\n";
+	ft_putstr(c);
+	return 0;
 }
