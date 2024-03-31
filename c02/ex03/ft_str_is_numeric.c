@@ -16,12 +16,12 @@ int	ft_str_is_numeric(char *str)
 	return (1);
 }
 
-int	main(int argc, char *argv[])
-{
-	if (argc == 2)
-	{
-		int num = ft_str_is_numeric(argv[1]);
-		printf("%d\n", num);
-	}
-	return (0);
-}
+// int	main(int argc, char *argv[])
+// {
+// 	if (argc == 2)
+// 	{
+// 		int num = ft_str_is_numeric(argv[1]);
+// 		printf("%d\n", num);
+// 	}
+// 	return (0);
+// }

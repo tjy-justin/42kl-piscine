@@ -14,13 +14,13 @@ char	*ft_strupcase(char *str)
 	return (str);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(int argc, char *argv[])
-{
-	if (argc == 2)
-	{
-		char *upcase = ft_strupcase(argv[1]);
-		printf("%s\n", upcase);
-	}
-}
+// int	main(int argc, char *argv[])
+// {
+// 	if (argc == 2)
+// 	{
+// 		char *upcase = ft_strupcase(argv[1]);
+// 		printf("%s\n", upcase);
+// 	}
+// }

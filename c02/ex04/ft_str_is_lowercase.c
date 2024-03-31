@@ -16,12 +16,12 @@ int	ft_str_is_lowercase(char *str)
 	return (1);
 }
 
-int	main(int argc, char *argv[])
-{
-	if (argc == 2)
-	{
-		int lowcase = ft_str_is_lowercase(argv[1]);
-		printf("%d\n", lowcase);
-	}
-	return (0);
-}
+// int	main(int argc, char *argv[])
+// {
+// 	if (argc == 2)
+// 	{
+// 		int lowcase = ft_str_is_lowercase(argv[1]);
+// 		printf("%d\n", lowcase);
+// 	}
+// 	return (0);
+// }

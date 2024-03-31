@@ -13,14 +13,14 @@ char	*ft_strcpy(char *dest, char *src)
 	return (dest);
 }
 
-int	main(int argc, char *argv[])
-{
-	if (argc == 3)
-	{
-		printf("%s\n", argv[1]);
-		printf("%s\n", argv[2]);
-		ft_strcpy(argv[1], argv[2]);
-		printf("%s\n", argv[1]);
-	}
-	return (0);
-}
+// int	main(int argc, char *argv[])
+// {
+// 	if (argc == 3)
+// 	{
+// 		printf("%s\n", argv[1]);
+// 		printf("%s\n", argv[2]);
+// 		ft_strcpy(argv[1], argv[2]);
+// 		printf("%s\n", argv[1]);
+// 	}
+// 	return (0);
+// }

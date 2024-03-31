@@ -16,13 +16,13 @@ int	ft_str_is_printable(char *str)
 	return (1);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(int argc, char *argv[])
-{
-	if (argc == 2)
-	{
-		int illegal = ft_str_is_printable(argv[1]);
-		printf("%d\n", illegal);
-	}
-}
+// int	main(int argc, char *argv[])
+// {
+// 	if (argc == 2)
+// 	{
+// 		int illegal = ft_str_is_printable(argv[1]);
+// 		printf("%d\n", illegal);
+// 	}
+// }

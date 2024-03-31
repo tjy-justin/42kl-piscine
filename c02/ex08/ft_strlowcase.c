@@ -14,13 +14,13 @@ char	*ft_strlowcase(char *str)
 	return (str);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(int argc, char *argv[])
-{
-	if (argc == 2)
-	{
-		char *lowcase = ft_strlowcase(argv[1]);
-		printf("%s\n", lowcase);
-	}
-}
+// int	main(int argc, char *argv[])
+// {
+// 	if (argc == 2)
+// 	{
+// 		char *lowcase = ft_strlowcase(argv[1]);
+// 		printf("%s\n", lowcase);
+// 	}
+// }

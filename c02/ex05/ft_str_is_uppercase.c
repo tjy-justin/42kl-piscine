@@ -16,12 +16,12 @@ int	ft_str_is_uppercase(char *str)
 	return (1);
 }
 
-int	main(int argc, char *argv[])
-{
-	if (argc == 2)
-	{
-		int upcase = ft_str_is_uppercase(argv[1]);
-		printf("%d\n", upcase);
-	}
-	return (0);
-}
+// int	main(int argc, char *argv[])
+// {
+// 	if (argc == 2)
+// 	{
+// 		int upcase = ft_str_is_uppercase(argv[1]);
+// 		printf("%d\n", upcase);
+// 	}
+// 	return (0);
+// }
