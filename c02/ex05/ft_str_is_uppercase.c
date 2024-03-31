@@ -1,4 +1,14 @@
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/31 14:27:41 by jin-tan           #+#    #+#             */
+/*   Updated: 2024/03/31 14:37:27 by jin-tan          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 int	ft_str_is_uppercase(char *str)
 {
@@ -16,12 +26,16 @@ int	ft_str_is_uppercase(char *str)
 	return (1);
 }
 
-// int	main(int argc, char *argv[])
-// {
-// 	if (argc == 2)
-// 	{
-// 		int upcase = ft_str_is_uppercase(argv[1]);
-// 		printf("%d\n", upcase);
-// 	}
-// 	return (0);
-// }
+#include <stdio.h>
+
+int	main(int argc, char *argv[])
+{
+	int	upcase;
+
+	if (argc == 2)
+	{
+		upcase = ft_str_is_uppercase(argv[1]);
+		printf("%d\n", upcase);
+	}
+	return (0);
+}

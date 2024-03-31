@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/31 14:27:51 by jin-tan           #+#    #+#             */
+/*   Updated: 2024/03/31 14:31:51 by jin-tan          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 char	*ft_strupcase(char *str)
 {
 	int	i;
@@ -14,13 +26,15 @@ char	*ft_strupcase(char *str)
 	return (str);
 }
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int	main(int argc, char *argv[])
-// {
-// 	if (argc == 2)
-// 	{
-// 		char *upcase = ft_strupcase(argv[1]);
-// 		printf("%s\n", upcase);
-// 	}
-// }
+int	main(int argc, char *argv[])
+{
+	char	*upcase;
+
+	if (argc == 2)
+	{
+		*upcase = ft_strupcase(argv[1]);
+		printf("%s\n", upcase);
+	}
+}

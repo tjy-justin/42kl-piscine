@@ -1,4 +1,14 @@
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/31 14:27:38 by jin-tan           #+#    #+#             */
+/*   Updated: 2024/03/31 14:38:11 by jin-tan          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 int	ft_str_is_lowercase(char *str)
 {
@@ -16,12 +26,16 @@ int	ft_str_is_lowercase(char *str)
 	return (1);
 }
 
-// int	main(int argc, char *argv[])
-// {
-// 	if (argc == 2)
-// 	{
-// 		int lowcase = ft_str_is_lowercase(argv[1]);
-// 		printf("%d\n", lowcase);
-// 	}
-// 	return (0);
-// }
+#include <stdio.h>
+
+int	main(int argc, char *argv[])
+{
+	int	lowcase;
+
+	if (argc == 2)
+	{
+		lowcase = ft_str_is_lowercase(argv[1]);
+		printf("%d\n", lowcase);
+	}
+	return (0);
+}

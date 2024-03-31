@@ -1,4 +1,14 @@
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/31 14:27:35 by jin-tan           #+#    #+#             */
+/*   Updated: 2024/03/31 14:38:36 by jin-tan          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 int	ft_str_is_numeric(char *str)
 {
@@ -16,12 +26,16 @@ int	ft_str_is_numeric(char *str)
 	return (1);
 }
 
-// int	main(int argc, char *argv[])
-// {
-// 	if (argc == 2)
-// 	{
-// 		int num = ft_str_is_numeric(argv[1]);
-// 		printf("%d\n", num);
-// 	}
-// 	return (0);
-// }
+#include <stdio.h>
+
+int	main(int argc, char *argv[])
+{
+	int	num;
+
+	if (argc == 2)
+	{
+		num = ft_str_is_numeric(argv[1]);
+		printf("%d\n", num);
+	}
+	return (0);
+}
