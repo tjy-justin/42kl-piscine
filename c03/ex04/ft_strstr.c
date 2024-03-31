@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/31 15:06:14 by jin-tan           #+#    #+#             */
+/*   Updated: 2024/03/31 15:06:15 by jin-tan          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 char	*ft_strstr(char *str, char *to_find)
 {
 	int	i;
@@ -28,9 +40,11 @@ char	*ft_strstr(char *str, char *to_find)
 
 int	main(int argc, char *argv[])
 {
+	char	*instr;
+
 	if (argc == 3)
 	{
-		char *instr = ft_strstr(argv[1], argv[2]);
+		instr = ft_strstr(argv[1], argv[2]);
 		if (instr != NULL)
 		{
 			printf("%s\n", instr);

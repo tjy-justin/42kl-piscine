@@ -1,9 +1,19 @@
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/31 15:08:27 by jin-tan           #+#    #+#             */
+/*   Updated: 2024/03/31 15:08:48 by jin-tan          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 char	*ft_strcat(char *dest, char *src) // concatenate not copy
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 0;
 	j = 0;
@@ -20,6 +30,8 @@ char	*ft_strcat(char *dest, char *src) // concatenate not copy
 	dest[i] = '\0';
 	return (dest);
 }
+
+#include <stdio.h>
 
 int	main(int argc, char *argv[])
 {
