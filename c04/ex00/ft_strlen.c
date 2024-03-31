@@ -9,7 +9,7 @@ int	ft_strlen(char *str)
 	{
 		i++;
 	}
-	return (str);
+	return (i);
 }
 
 int	main(int argc, char *argv[])
