@@ -1,44 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/31 15:08:27 by jin-tan           #+#    #+#             */
-/*   Updated: 2024/04/01 14:54:27 by jin-tan          ###   ########.fr       */
+/*   Created: 2024/03/31 12:41:12 by bachai            #+#    #+#             */
+/*   Updated: 2024/04/01 17:24:35 by jin-tan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *src) // concatenate not copy
+int	ft_strlen(char *str)
 {
 	int	i;
-	int	j;
 
 	i = 0;
-	j = 0;
-	while (dest[i] != '\0')
-	{
-		i++; // loop until null to concat
-	}
-	while (src[j] != '\0')
-	{
-		dest[i] = src[j]; // cat src[j] starts from null
+	while (str[i] != '\0')
 		i++;
-		j++;
-	}
-	dest[i] = '\0';
-	return (dest);
+	return (i);
 }
 
 #include <stdio.h>
 
-int	main(int argc, char *argv[])
+int	main(void)
 {
-	if (argc == 3)
-	{
-		ft_strcat(argv[1], argv[2]);
-		printf("%s\n", argv[1]);
-	}
+	char	a[] = "hellow";
+
+	printf("Length: %d\n", ft_strlen(a));
 	return (0);
 }

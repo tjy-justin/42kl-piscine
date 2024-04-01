@@ -1,44 +1,52 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/31 15:08:27 by jin-tan           #+#    #+#             */
-/*   Updated: 2024/04/01 14:54:27 by jin-tan          ###   ########.fr       */
+/*   Created: 2024/03/31 16:46:18 by bachai            #+#    #+#             */
+/*   Updated: 2024/04/01 21:01:03 by jin-tan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *src) // concatenate not copy
-{
-	int	i;
-	int	j;
+#include <unistd.h>
 
-	i = 0;
-	j = 0;
-	while (dest[i] != '\0')
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
+void	ft_putnbr(int nb)
+{
+	if (nb == -2147483648)
 	{
-		i++; // loop until null to concat
+		write(1, "-2147483648", 11);
+		return ;
 	}
-	while (src[j] != '\0')
+	if (nb < 0)
 	{
-		dest[i] = src[j]; // cat src[j] starts from null
-		i++;
-		j++;
+		ft_putchar('-');
+		nb = -nb;
 	}
-	dest[i] = '\0';
-	return (dest);
+	if (nb >= 10)
+	{
+		ft_putnbr(nb / 10);
+		ft_putchar(nb % 10 + '0');
+	}
+	else
+		ft_putchar(nb + '0');
 }
 
 #include <stdio.h>
 
-int	main(int argc, char *argv[])
+int	main(void)
 {
-	if (argc == 3)
-	{
-		ft_strcat(argv[1], argv[2]);
-		printf("%s\n", argv[1]);
-	}
+	ft_putnbr(123);
+	printf("\n");
+	ft_putnbr(12);
+	printf("\n");
+	ft_putnbr(-2147483648);
+	printf("\n");
 	return (0);
 }

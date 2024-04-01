@@ -5,25 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/31 15:08:27 by jin-tan           #+#    #+#             */
-/*   Updated: 2024/04/01 14:54:27 by jin-tan          ###   ########.fr       */
+/*   Created: 2024/04/01 08:27:12 by skhairul          #+#    #+#             */
+/*   Updated: 2024/04/01 16:57:09 by jin-tan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *src) // concatenate not copy
+char	*ft_strcat(char *dest, char *src)
 {
 	int	i;
 	int	j;
 
 	i = 0;
+	while (dest[i])
+		i++;
 	j = 0;
-	while (dest[i] != '\0')
+	while (src[j])
 	{
-		i++; // loop until null to concat
-	}
-	while (src[j] != '\0')
-	{
-		dest[i] = src[j]; // cat src[j] starts from null
+		dest[i] = src[j];
 		i++;
 		j++;
 	}
@@ -32,13 +30,15 @@ char	*ft_strcat(char *dest, char *src) // concatenate not copy
 }
 
 #include <stdio.h>
+#include <string.h>
 
-int	main(int argc, char *argv[])
+int	main(void)
 {
-	if (argc == 3)
-	{
-		ft_strcat(argv[1], argv[2]);
-		printf("%s\n", argv[1]);
-	}
+	char	src[50], dest[20];
+
+	strcpy(src, "This is source");
+	strcpy(dest, "This is destination");
+	ft_strcat(dest, src);
+	printf("result: %s\n", dest);
 	return (0);
 }

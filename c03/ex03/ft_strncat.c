@@ -6,7 +6,7 @@
 /*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/31 15:06:30 by jin-tan           #+#    #+#             */
-/*   Updated: 2024/04/01 11:37:01 by jin-tan          ###   ########.fr       */
+/*   Updated: 2024/04/01 14:54:13 by jin-tan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,14 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	return (dest);
 }
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int	main(int argc, char *argv[])
-// {
-// 	if (argc == 3)
-// 	{
-// 		ft_strncat(argv[1], argv[2], 20);
-// 		printf("%s\n", argv[1]);
-// 	}
-// 	return (0);
-// }
+int	main(int argc, char *argv[])
+{
+	if (argc == 3)
+	{
+		ft_strncat(argv[1], argv[2], 20);
+		printf("%s\n", argv[1]);
+	}
+	return (0);
+}

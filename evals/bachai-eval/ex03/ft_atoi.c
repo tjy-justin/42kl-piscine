@@ -1,44 +1,50 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/31 15:10:19 by jin-tan           #+#    #+#             */
-/*   Updated: 2024/04/01 14:55:04 by jin-tan          ###   ########.fr       */
+/*   Created: 2024/04/01 13:23:13 by bachai            #+#    #+#             */
+/*   Updated: 2024/04/01 17:45:56 by jin-tan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
+int	ft_atoi(char *str)
 {
 	int	i;
+	int	count;
+	int	result;
+	int	num;
 
 	i = 0;
-	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
+	count = 0;
+	result = 0;
+	num = 1;
+	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
+		i++;
+	while (str[i] == '-' || str[i] == '+')
 	{
+		if (str[i] == '-')
+			count++;
 		i++;
 	}
-	if (s1[i] == s2[i])
+	if (count % 2 != 0)
+		num = -1;
+	while (str[i] >= '0' && str[i] <= '9')
 	{
-		return (0);
+		result = (result * 10) + (str[i] - '0');
+		i++;
 	}
-	else
-	{
-		return (s1[i] - s2[i]);
-	}
+	return (result * num);
 }
 
 #include <stdio.h>
 
-int	main(int argc, char *argv[])
+int	main(void)
 {
-	int	comp;
+	char	string[] = "---+-+134";
 
-	if (argc == 3)
-	{
-		comp = ft_strcmp(argv[1], argv[2]);
-		printf("%d\n", comp);
-	}
-	return (0);
+	ft_atoi(string);
+	printf("%d\n", ft_atoi(string));
 }

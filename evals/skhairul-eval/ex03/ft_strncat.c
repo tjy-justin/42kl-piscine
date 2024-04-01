@@ -1,29 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/31 15:08:27 by jin-tan           #+#    #+#             */
-/*   Updated: 2024/04/01 14:54:27 by jin-tan          ###   ########.fr       */
+/*   Created: 2024/04/01 08:30:01 by skhairul          #+#    #+#             */
+/*   Updated: 2024/04/01 16:58:23 by jin-tan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *src) // concatenate not copy
+char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	int	i;
-	int	j;
+	unsigned int	i;
+	unsigned int	j;
 
 	i = 0;
+	while (dest[i])
+		i++;
 	j = 0;
-	while (dest[i] != '\0')
+	while (j < nb && src[j])
 	{
-		i++; // loop until null to concat
-	}
-	while (src[j] != '\0')
-	{
-		dest[i] = src[j]; // cat src[j] starts from null
+		dest[i] = src[j];
 		i++;
 		j++;
 	}
@@ -32,13 +30,15 @@ char	*ft_strcat(char *dest, char *src) // concatenate not copy
 }
 
 #include <stdio.h>
+#include <string.h>
 
-int	main(int argc, char *argv[])
+int	main(void)
 {
-	if (argc == 3)
-	{
-		ft_strcat(argv[1], argv[2]);
-		printf("%s\n", argv[1]);
-	}
+	char	src[50], dest[50];
+
+	strcpy(src, "Father 123");
+	strcpy(dest, "I am your ");
+	ft_strncat(dest, src, 5);
+	printf("result: %s\n", dest);
 	return (0);
 }

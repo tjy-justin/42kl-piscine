@@ -1,44 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_recursive_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/31 15:10:19 by jin-tan           #+#    #+#             */
-/*   Updated: 2024/04/01 14:55:04 by jin-tan          ###   ########.fr       */
+/*   Created: 2024/03/28 14:24:53 by limzenho          #+#    #+#             */
+/*   Updated: 2024/04/01 13:54:13 by jin-tan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
+int	ft_recursive_power(int nb, int power)
 {
-	int	i;
-
-	i = 0;
-	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
-	{
-		i++;
-	}
-	if (s1[i] == s2[i])
+	if (power < 0)
 	{
 		return (0);
 	}
-	else
+	else if (power == 0)
 	{
-		return (s1[i] - s2[i]);
+		return (1);
 	}
+	return (nb * ft_recursive_power(nb, power - 1));
 }
 
 #include <stdio.h>
 
-int	main(int argc, char *argv[])
-{
-	int	comp;
+int	ft_recursive_power(int nb, int power);
 
-	if (argc == 3)
-	{
-		comp = ft_strcmp(argv[1], argv[2]);
-		printf("%d\n", comp);
-	}
+int	main(void)
+{
+	int result;
+
+	int base, exponent;
+	printf("Enter the base: ");
+	scanf("%d", &base);
+	printf("Enter the exponent: ");
+	scanf("%d", &exponent);
+	result = ft_recursive_power(base, exponent);
+	printf("%d raised to the power of %d is: %d\n", base, exponent, result);
 	return (0);
 }

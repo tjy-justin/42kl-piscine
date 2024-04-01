@@ -1,44 +1,53 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/31 15:10:19 by jin-tan           #+#    #+#             */
-/*   Updated: 2024/04/01 14:55:04 by jin-tan          ###   ########.fr       */
+/*   Created: 2024/03/25 19:32:49 by limzenho          #+#    #+#             */
+/*   Updated: 2024/04/01 13:50:34 by jin-tan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
+int	ft_iterative_factorial(int nb)
 {
 	int	i;
+	int	facto;
 
-	i = 0;
-	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
-	{
-		i++;
-	}
-	if (s1[i] == s2[i])
+	i = 1;
+	facto = 1;
+	if (nb < 0)
 	{
 		return (0);
 	}
-	else
+	while (i <= nb)
 	{
-		return (s1[i] - s2[i]);
+		facto *= i;
+		++i;
 	}
+	return (facto);
 }
 
 #include <stdio.h>
 
-int	main(int argc, char *argv[])
-{
-	int	comp;
+int	ft_iterative_factorial(int nb);
 
-	if (argc == 3)
+int	main(void)
+{
+	int	num;
+	int	factorial;
+
+	printf("Enter a number to find its factorial: ");
+	scanf("%d", &num);
+	if (num < 0)
 	{
-		comp = ft_strcmp(argv[1], argv[2]);
-		printf("%d\n", comp);
+		printf("Factorial of a negative number is not defined.\n");
+	}
+	else
+	{
+		factorial = ft_iterative_factorial(num);
+		printf("The factorial of %d is: %d\n", num, factorial);
 	}
 	return (0);
 }
