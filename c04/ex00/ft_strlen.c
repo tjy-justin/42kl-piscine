@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int	ft_strlen(char *str)
 {
 	int	i;
@@ -12,12 +10,14 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
-int	main(int argc, char *argv[])
-{
-	if (argc == 2)
-	{
-		ft_strlen(argv[1]);
-		printf("%s\n", argv[1]);
-	}
-	return (0);
-}
+// #include <stdio.h>
+
+// int	main(int argc, char *argv[])
+// {
+// 	if (argc == 2)
+// 	{
+// 		ft_strlen(argv[1]);
+// 		printf("%s\n", argv[1]);
+// 	}
+// 	return (0);
+// }

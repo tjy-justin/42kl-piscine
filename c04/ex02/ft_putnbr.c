@@ -1,4 +1,6 @@
-#include <stdlib.h>
+// atoi but
+// all possivble int chars
+
 #include <unistd.h>
 
 void	ft_putchar(char c)
@@ -10,16 +12,22 @@ void	ft_putnbr(int nb)
 {
 	if (nb == -2147483648)
 	{
-		ft_putchar(nb);
+		ft_putchar('-');
+		ft_putchar('2');
+		nb = 147483648;
 	}
 }
 
-int	main(int argc, char *argv[])
-{
-	if (argc == 2)
-	{
-		int num = atoi(argv[1]);
-		ft_putnbr(num);
-	}
-	return (0);
-}
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int	main(int argc, char *argv[])
+// {
+// 	if (argc == 2)
+// 	{
+// 		int num = atoi(argv[1]);
+// 		ft_putnbr(num);
+// 		printf("%d\n", num);
+// 	}
+// 	return (0);
+// }

@@ -38,13 +38,13 @@ int	ft_atoi(char *str)
 	return (sign * num);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(int argc, char *argv[])
-{
-	(void)argc;
-	int num1 = ft_atoi(argv[1]);
+// int	main(int argc, char *argv[])
+// {
+// 	(void)argc;
+// 	int num1 = ft_atoi(argv[1]);
 
-	printf("%d\n", num1);
-	return (0);
-}
+// 	printf("%d\n", num1);
+// 	return (0);
+// }
