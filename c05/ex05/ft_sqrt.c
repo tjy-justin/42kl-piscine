@@ -6,7 +6,7 @@
 /*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 19:08:43 by jin-tan           #+#    #+#             */
-/*   Updated: 2024/04/02 19:08:44 by jin-tan          ###   ########.fr       */
+/*   Updated: 2024/04/02 19:14:18 by jin-tan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,21 @@
 
 int	ft_sqrt(int nb)
 {
-    int i;
+	int	i;
 
-    i = 1;
-    if (nb < 0)
-        return 0;
-    while (i * i <= nb && i <= 46340)
-    {
-        if (i * i == nb)
-            return (i);
-        if (nb > 46340)
-            return 0;
-        else
-            i++;
-    }
-    return 0;
+	i = 1;
+	if (nb < 0)
+		return (0);
+	while (i * i <= nb && i <= 46340)
+	{
+		if (i * i == nb)
+			return (i);
+		if (nb > 46340)
+			return (0);
+		else
+			i++;
+	}
+	return (0);
 }
 
 #include <stdio.h>
