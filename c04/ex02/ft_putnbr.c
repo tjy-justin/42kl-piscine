@@ -1,5 +1,4 @@
-// atoi but
-// in string and all possible int chars
+// atoi but in string and all possible int chars
 
 #include <unistd.h>
 

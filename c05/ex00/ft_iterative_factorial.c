@@ -1,17 +1,26 @@
 int	ft_iterative_factorial(int nb)
 {
-	while (nb != '\0')
+	int	num;
+
+	num = 1;
+	if (nb < 0) // no neg factorial as n! = n*(n-1)!
+		return (0);
+	else if (nb == 0)
 	{
-		/* code */
+		return (num);
 	}
+	while (nb > 0)
+	{
+		num *= nb--; // this is *= nb && nb--
+	}
+	return (num);
 }
 
 #include <stdio.h>
 
-int	main(int argc, char *argv[])
+int	main(void)
 {
-	(void)argc;
-	int factorial = ft_iterative_factorial(argv[1]);
+	int factorial = ft_iterative_factorial(5);
 
 	printf("%d\n", factorial);
 	return (0);
