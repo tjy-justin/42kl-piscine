@@ -6,7 +6,7 @@
 /*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/30 16:10:02 by sallee            #+#    #+#             */
-/*   Updated: 2024/03/30 18:10:52 by jin-tan          ###   ########.fr       */
+/*   Updated: 2024/04/02 21:35:14 by jin-tan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,18 +30,18 @@ int	ft_is_prime(int nb)
 	return (1);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(void)
-{
-	printf("%d\n", ft_is_prime(0));
-	printf("%d\n", ft_is_prime(1));
-	printf("%d\n", ft_is_prime(2));
-	printf("%d\n", ft_is_prime(3));
-	printf("%d\n", ft_is_prime(4));
-	printf("%d\n", ft_is_prime(5));
-	printf("%d\n", ft_is_prime(6));
-	printf("%d\n", ft_is_prime(7));
-	printf("%d\n", ft_is_prime(8));
-	return (0);
-}
+// int	main(void)
+// {
+// 	printf("%d\n", ft_is_prime(0));
+// 	printf("%d\n", ft_is_prime(1));
+// 	printf("%d\n", ft_is_prime(2));
+// 	printf("%d\n", ft_is_prime(3));
+// 	printf("%d\n", ft_is_prime(4));
+// 	printf("%d\n", ft_is_prime(5));
+// 	printf("%d\n", ft_is_prime(6));
+// 	printf("%d\n", ft_is_prime(7));
+// 	printf("%d\n", ft_is_prime(8));
+// 	return (0);
+// }

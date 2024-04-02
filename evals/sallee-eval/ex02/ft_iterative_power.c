@@ -6,7 +6,7 @@
 /*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/30 14:12:47 by sallee            #+#    #+#             */
-/*   Updated: 2024/03/30 18:05:26 by jin-tan          ###   ########.fr       */
+/*   Updated: 2024/04/02 21:34:08 by jin-tan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,10 @@ int	ft_iterative_power(int nb, int power)
 	return (result);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(void)
-{
-	printf("%d\n", ft_iterative_power(2, 0));
-	return (0);
-}
+// int	main(void)
+// {
+// 	printf("%d\n", ft_iterative_power(2, 0));
+// 	return (0);
+// }

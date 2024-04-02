@@ -6,7 +6,7 @@
 /*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/30 14:08:12 by sallee            #+#    #+#             */
-/*   Updated: 2024/03/30 17:58:27 by jin-tan          ###   ########.fr       */
+/*   Updated: 2024/04/02 21:34:13 by jin-tan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,16 +23,16 @@ int	ft_recursive_factorial(int nb)
 	return (nb * ft_recursive_factorial(nb - 1));
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(void)
-{
-	int number;
-	printf("Enter a number to calculate its factorial: ");
-	scanf("%d", &number);
+// int	main(void)
+// {
+// 	int number;
+// 	printf("Enter a number to calculate its factorial: ");
+// 	scanf("%d", &number);
 
-	int factorial = ft_recursive_factorial(number);
-	printf("Factorial of %d is: %d\n", number, factorial);
+// 	int factorial = ft_recursive_factorial(number);
+// 	printf("Factorial of %d is: %d\n", number, factorial);
 
-	return (0);
-}
+// 	return (0);
+// }
