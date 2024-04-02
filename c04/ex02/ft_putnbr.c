@@ -6,11 +6,12 @@
 /*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 14:05:51 by jin-tan           #+#    #+#             */
-/*   Updated: 2024/04/02 14:05:52 by jin-tan          ###   ########.fr       */
+/*   Updated: 2024/04/02 15:36:49 by jin-tan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // atoi but in string and all possible int chars
+// can convert int to long to take care of largest int
 
 #include <unistd.h>
 
