@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/02 14:05:51 by jin-tan           #+#    #+#             */
+/*   Updated: 2024/04/02 14:05:52 by jin-tan          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 // atoi but in string and all possible int chars
 
 #include <unistd.h>
@@ -21,9 +33,10 @@ void	ft_putnbr(int nb)
 		nb *= -1;
 	}
 	if (nb >= 10)
-	{ // these are recursive, so 123 will call ft_putnbr until all are separated
+	{
 		ft_putnbr(nb / 10);
 		ft_putnbr(nb % 10);
+		// recursive, so 123 will call ft_putnbr until all are separated
 	}
 	else
 	{

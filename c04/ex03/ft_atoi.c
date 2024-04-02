@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/02 14:05:55 by jin-tan           #+#    #+#             */
+/*   Updated: 2024/04/02 14:32:07 by jin-tan          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 // Skipping Leading White Spaces
 // whitespaces is 9 to 13
 // handle space itself
@@ -38,13 +50,13 @@ int	ft_atoi(char *str)
 	return (sign * num);
 }
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int	main(int argc, char *argv[])
-// {
-// 	(void)argc;
-// 	int num1 = ft_atoi(argv[1]);
+int	main(int argc, char *argv[])
+{
+	(void)argc;
+	int num1 = ft_atoi(argv[1]);
 
-// 	printf("%d\n", num1);
-// 	return (0);
-// }
+	printf("%d\n", num1);
+	return (0);
+}

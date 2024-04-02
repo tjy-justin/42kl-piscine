@@ -1,4 +1,5 @@
 // n = n−1 + n−2
+// 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377
 
 int	ft_fibonacci(int index)
 {
@@ -27,7 +28,7 @@ int	ft_fibonacci(int index)
 
 int	main(void)
 {
-	int fibo = ft_fibonacci(3);
+	int fibo = ft_fibonacci(8);
 
 	printf("%d\n", fibo);
 	return (0);
