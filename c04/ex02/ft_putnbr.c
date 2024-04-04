@@ -6,7 +6,7 @@
 /*   By: jin-tan <jin-tan@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 14:05:51 by jin-tan           #+#    #+#             */
-/*   Updated: 2024/04/02 15:36:49 by jin-tan          ###   ########.fr       */
+/*   Updated: 2024/04/04 17:42:03 by jin-tan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,18 +45,13 @@ void	ft_putnbr(int nb)
 	}
 }
 
-// #include <stdio.h>
-// #include <unistd.h>
-
-// int	main(void)
-// {
-// 	int n1 = 123;
-// 	int n2 = -456;
-// 	int n3 = -2147483648;
-
-// 	printf("%d\n", n1);
-// 	printf("%d\n", n2);
-// 	printf("%d\n", n3);
-
-// 	return (0);
-// }
+int	main(void)
+{
+	ft_putnbr(123);
+	ft_putchar('\n');
+	ft_putnbr(-456);
+	ft_putchar('\n');
+	ft_putnbr(-2147483648);
+	ft_putchar('\n');
+	return (0);
+}
