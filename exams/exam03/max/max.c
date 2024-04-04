@@ -31,5 +31,6 @@ int	main(void)
 	tab[1] = 6;
 	tab[2] = 4;
 	printf("%d", max(tab, 3));
+	free(tab);
 	return (0);
 }
