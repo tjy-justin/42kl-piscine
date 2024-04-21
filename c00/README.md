@@ -7,8 +7,8 @@ Fn+F1
 
 norminette -R CheckForbiddenSourceHeader
 
-cc -Wall -Wextra -Werror hello.c bye.c -o hello
-./hello
+cc -Wall -Wextra -Werror hello.c bye.c
+./a.out
 ```
 
 # ex00
